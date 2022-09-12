@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
                 theDate?.let {
                     //convert to minute
                     val selectedDataInMinute = theDate.time / 60000
-//getting current time and convert 
+//getting current time and convert
                     val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
                     val currentDateInMinute = currentDate.time / 60000
                     val differenceInMinute = currentDateInMinute - selectedDataInMinute
